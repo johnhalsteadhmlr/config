@@ -1,0 +1,15 @@
+applications:
+
+  my-frontend:
+    repo: https://github.com/my/frontend.git
+    ref: develop
+
+  my-backend:
+    repo: git@git.lr.net:my/backend.git
+    ref: master
+    options:
+      - compose-service-name: my-backend-compose-service
+        auto-start: false
+
+  my-new-app:
+    repo: none
